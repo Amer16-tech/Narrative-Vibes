@@ -1,27 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Narrative Vibes — Literary articles, reviews & original writing</title>
-    <meta
-      name="description"
-      content="Narrative Vibes: a luxury literary platform for articles, book reviews, original stories, and poetry — expertly curated and SEO-optimized."
-    />
-    <link rel="canonical" href="https://narrative-vibes.vercel.app/" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="min-h-screen bg-[#0b1020] text-[#f6f5f2] antialiased leading-relaxed">
-    <header class="max-w-6xl mx-auto px-6 py-8">
-      <h1 class="text-3xl font-bold">Narrative Vibes</h1>
-      <p class="text-neutral-300">Luxury literary articles & original writing</p>
-    </header>
-    <main class="max-w-6xl mx-auto px-6 py-8">
-      <h2 class="text-2xl mb-4">Coming Soon</h2>
-      <p class="text-neutral-400">The platform is under development. Stay tuned!</p>
-    </main>
-    <footer class="mt-12 border-t border-[#ffffff10] pt-8 text-sm text-neutral-400 text-center">
-      <p>© 2025 Narrative Vibes — All rights reserved.</p>
-    </footer>
-  </body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Narrative Vibes — Literary articles, reviews & original writing</title>
+<meta name="description" content="Narrative Vibes: luxury literary platform for articles, book reviews, original stories, and poetry." />
+<link rel="canonical" href="https://narrative-vibes.vercel.app/" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+<style>body{font-family:'Inter',sans-serif} h1,h2,h3{font-family:'Playfair Display',serif} :focus{outline:3px solid rgba(202,167,47,0.35);outline-offset:3px}</style>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Narrative Vibes",
+  "url": "https://narrative-vibes.vercel.app/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://narrative-vibes.vercel.app/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<!-- Google AdSense placeholder (replace ADSENSE_CLIENT_ID) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ADSENSE_CLIENT_ID" crossorigin="anonymous"></script>
+</head>
+<body class="min-h-screen bg-[#0b1020] text-[#f6f5f2]">
+  <header class="max-w-6xl mx-auto px-6 py-6">
+    <nav class="flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="rounded-full w-12 h-12 bg-gradient-to-br from-[#caa72f] to-[#e7d38a] flex items-center justify-center shadow-2xl">
+          <span class="font-serif text-lg text-[#0b1020]">NV</span>
+        </div>
+        <div>
+          <a href="/" class="text-2xl font-serif font-semibold tracking-tight">Narrative Vibes</a>
+          <p class="text-sm text-neutral-300">Luxury literary articles & original writing</p>
+        </div>
+      </div>
+      <ul class="flex gap-4 items-center text-sm">
+        <li><a href="/" class="hover:underline">Home</a></li>
+        <li><a href="articles.html" class="hover:underline">Articles</a></li>
+        <li><a href="reviews.html" class="hover:underline">Book Reviews</a></li>
+        <li><a href="poetry.html" class="hover:underline">Poetry</a></li>
+        <li><a href="stories.html" class="hover:underline">Stories</a></li>
+        <li><a href="submit.html" class="px-3 py-2 rounded bg-[#caa72f] text-[#0b1020]">Submit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-8">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <article class="md:col-span-2 bg-gradient-to-b from-[#071020]/60 to-transparent p-8 rounded-2xl shadow-lg">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold">Where words find atmosphere</h1>
+        <p class="mt-4 text-neutral-300 max-w-prose">
+          Narrative Vibes curates literary voices — longform essays, incisive reviews, and original fiction and poetry.
+        </p>
+        <div class="mt-6 flex gap-4">
+          <a href="articles.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-[#caa72f]/30">Explore Articles</a>
+          <a href="submit.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#caa72f] text-[#0b1020]">Submit Your Work</a>
+        </div>
+        <div class="mt-8">
+          <img src="assets/featured.jpg" alt="Featured literature" loading="lazy" class="w-full rounded-xl shadow-2xl object-cover h-64" />
+        </div>
+      </article>
+
+      <aside class="space-y-6">
+        <div class="bg-[#071020]/60 p-6 rounded-xl">
+          <h3 class="font-semibold">Subscribe</h3>
+          <p class="text-sm text-neutral-500">Weekly letters with curated reads and exclusives.</p>
+          <form class="mt-4 flex gap-2" onsubmit="event.preventDefault(); alert('Demo: subscription received')">
+            <input type="email" placeholder="you@domain.com" class="flex-1 rounded-lg px-3 py-2 text-black" required />
+            <button type="submit" class="px-4 py-2 rounded-lg bg-[#caa72f] text-[#0b1020]">Join</button>
+          </form>
+        </div>
+        <div class="bg-[#071020]/60 p-6 rounded-xl">
+          <h4 class="font-semibold">Top Reviews</h4>
+          <ol class="mt-2 text-sm list-decimal list-inside text-neutral-400">
+            <li>The Quiet Compass — A review</li>
+            <li>City of Sound — A critical read</li>
+            <li>Rewriting the Past — Essay</li>
+          </ol>
+        </div>
+        <div class="bg-neutral-900 p-4 rounded-xl text-center text-sm text-neutral-400">
+          <!-- AdSense slot placeholder: replace data-ad-client -->
+          <ins class="adsbygoogle" style="display:block;width:100%;height:250px" data-ad-client="ADSENSE_CLIENT_ID" data-ad-slot="AD_SLOT_ID"></ins>
+        </div>
+      </aside>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="font-serif text-2xl mb-6">Latest & Featured</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-[#071020]/50 p-6 rounded-xl">
+          <h3 class="font-semibold text-lg"><a href="post-on-quiet-mornings.html">On Quiet Mornings</a></h3>
+          <p class="text-sm text-neutral-300 mt-2">An essay about stillness and attention in modern life.</p>
+        </article>
+        <article class="bg-[#071020]/50 p-6 rounded-xl">
+          <h3 class="font-semibold text-lg"><a href="post-review-city-of-sound.html">Review: City of Sound</a></h3>
+          <p class="text-sm text-neutral-300 mt-2">A close reading of the new urban novel.</p>
+        </article>
+        <article class="bg-[#071020]/50 p-6 rounded-xl">
+          <h3 class="font-semibold text-lg"><a href="post-evening-call.html">Selected Poem: Evening Call</a></h3>
+          <p class="text-sm text-neutral-300 mt-2">A short lyric on memory and weather.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-12 bg-[#071020]/40 p-8 rounded-2xl">
+      <h2 class="font-serif text-xl">Editorial standards</h2>
+      <p class="text-neutral-300 mt-2 max-w-prose">
+        We prioritize original, carefully edited writing. Submissions should be previously unpublished and follow our guidelines.
+      </p>
+      <div class="mt-4 flex gap-4">
+        <a href="submit.html" class="px-4 py-2 rounded-lg border">Submission guidelines</a>
+        <a href="contribute.html" class="px-4 py-2 rounded-lg bg-[#caa72f] text-[#0b1020]">Contribute</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 border-t border-[#ffffff10] pt-8 text-sm text-neutral-400">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
+      <div>
+        <strong>Narrative Vibes</strong>
+        <p class="mt-2">© 2025 Narrative Vibes — All rights reserved.</p>
+      </div>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie / GDPR consent -->
+  <div id="cookie-consent" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 bg-[#ffffff] text-black p-4 rounded-lg shadow-lg hidden">
+    <div class="flex flex-col md:flex-row md:items-center md:gap-4">
+      <div class="flex-1 text-sm">We use cookies to personalize content and ads, provide social media features and analyze traffic. By continuing you agree to our <a href='privacy.html' class='underline'>privacy policy</a>.</div>
+      <div class="mt-3 md:mt-0"><button id="accept-cookies" class="px-3 py-2 rounded bg-[#caa72f]">Accept</button></div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  try{
+    if(!localStorage.getItem('nv_cookies_accepted')){
+      document.getElementById('cookie-consent').style.display='block';
+    }
+    document.getElementById('accept-cookies').addEventListener('click', function(){
+      localStorage.setItem('nv_cookies_accepted','1');
+      document.getElementById('cookie-consent').style.display='none';
+    });
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }catch(e){}
+})();
+</script>
+
+</body>
 </html>
